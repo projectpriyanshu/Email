@@ -20,6 +20,17 @@ class excel extends Controller
             $excel->email  = $request->email;
             $excel->password  = $request->password;
             $excel->attachment  = $request->attachment;
+            
+// Email send without attachment-----------------------------------------------
+            // $token = Str::random(64);
+            // Mail::send('mail', ['token' => $token], function($message) use($request){
+            // $message->to($request->email);
+            // $message->from(env('MAIL_FROM_ADDRESS'), env('APP_NAME'));
+            // $message->subject('your password is ');
+            // });
+
+//end---------------------------------------------------------------------------
+
             $excel->save();
 
 // Email send without attachment-----------------------------------------------
