@@ -7,6 +7,7 @@ use Illuminate\Http\Request;
 use Mail;
 use Str;
 use File;
+// website link " https://hackthestuff.com/article/laravel-send-mail-with-file-attachment-example   "
 class excel extends Controller
 {
     public function index(){
